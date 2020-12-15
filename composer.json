@@ -1,16 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "michaelueber/laravel-cms-package",
+    "description": "A package to manage content in Laravel applications.",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "michaelueber",
+        "laravel-cms-package"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/michaelueber/laravel-cms-package",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Michael Becker",
+            "email": "michael.becker@ueber.io",
             "homepage": "https://spatie.be",
             "role": "Developer"
         }
@@ -25,13 +25,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Michaelueber\\LaravelCmsPackage\\": "src",
+            "Michaelueber\\LaravelCmsPackage\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Michaelueber\\LaravelCmsPackage\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Michaelueber\\LaravelCmsPackage\\LaravelCmsPackageServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "LaravelCmsPackage": "Michaelueber\\LaravelCmsPackage\\LaravelCmsPackageFacade"
             }
         }
     },
